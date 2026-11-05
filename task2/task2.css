@@ -206,14 +206,10 @@
   left: 0;
   top: 0;
 
-  /* сдвиг элемента на 50 процентов длины и высоты вверх и влево */
   transform: translate(-50%, -50%);
   box-sizing: border-box;
   border-radius: 50%;
-  background: radial-gradient(
-      /* если убрать closest-side, то он будет отсчитываться не от края круга,
-        а от угла квадрата, из которого был сделан круг*/
-      circle closest-side,
+  background: radial-gradient(circle closest-side,
       transparent calc(100% - 15px),
       #ffe45a calc(100% - 15px),
       #e88613 100%);
