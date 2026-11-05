@@ -122,8 +122,19 @@ main h2 {
   color: #16324f;
 }
 
+main ol {
+  padding: 0;
+  list-style: none;
+  counter-reset: step;
+}
+
 main li {
   display: flow-root;
+  counter-increment: step;
+}
+
+main li>h2::before {
+  content: counter(step) ". ";
 }
 
 main {
