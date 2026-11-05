@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Задание 4</title>
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="task4.css" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a class="brand" href="../index.html">
+        <span class="logo"></span>
+        <span>go-awards</span>
+      </a>
+
+      <a href="../index.html">Главная</a>
+      <a href="../how-it-works.html">Как это работает</a>
+      <a href="../tasks.html" aria-current="page">Задания</a>
+    </nav>
+  </header>
+
+  <main class="quiz-page">
+    <section class="quiz" id="quiz">
+      <h1 class="quiz-title">Вопрос</h1>
+      <p class="quiz-topic">Тема: грамотность</p>
+
+      <div class="finished" id="finished" hidden>
+        <p class="finished-title">Вопросы закончились</p>
+        <p class="finished-stats" id="stats"></p>
+        <p class="finished-hint">
+          Нажмите на любой вопрос, чтобы увидеть правильный ответ.
+        </p>
+        <button type="button" class="restart" id="restart">
+          Начать заново
+        </button>
+      </div>
+
+      <div class="stage" id="quiz-area"></div>
+    </section>
+  </main>
+
+  <footer>
+    <h2>Об авторе</h2>
+    <p>Учебный проект Салавата Яббарова</p>
+    <p>
+      Место обучения: Санкт-Петербургский политехнический университет
+      имени Петра Великого.
+    </p>
+    <p>Почта: yabbarov.si@edu.spbstu.ru</p>
+  </footer>
+
+  <script src="questions.js"></script>
+  <script src="task4.js"></script>
+</body>
+
+</html>
